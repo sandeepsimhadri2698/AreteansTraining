@@ -10,7 +10,12 @@ public class division extends calculator {
 
     @Override
     public void divide() {
+        if(num2==0){
+            System.out.println("dividing by zero is not possible");
+        }
+        else{
         float div =num1/num2;
         System.out.println("Division of the two numbers is : "+div);
     }
+}
 }
