@@ -8,7 +8,7 @@ public class runner{
         int num1=sc.nextInt();
         System.out.println("Enter the second number : ");
         int num2 = sc.nextInt();
-        System.out.println("Enter the Operator : ");
+        System.out.println("Enter the Operation to perform: ");
         String opr = sc.next();
         switch(opr){
             case "+":
