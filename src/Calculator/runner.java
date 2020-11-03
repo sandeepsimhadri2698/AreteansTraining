@@ -16,7 +16,7 @@ public class runner{
                 add.add();
                 break;
             case "-":
-                substraction diff = new substraction(num1,num2);
+                subtraction diff = new subtraction(num1,num2);
                 diff.subtract();
                 break;
             case "*":
