@@ -2,15 +2,19 @@ package Calculator;
 
 public class multiplication extends calculator {
 
-    private static double num1 ,num2;
-    multiplication(int n1, int n2){
-        num1=n1;
-        num2=n2;
+    private static int [] array3;
+    multiplication(int[] array){
+       // num1=n1;
+       // num2=n2;
+        array3=array;
     }
 
     @Override
     public void multiply() {
-        double mul =num1*num2;
-        System.out.println("Multiplication of the two numbers is : "+mul);
+       //double mul =num1*num2;
+        int mul=1;
+        for(int i=0;i< array3.length;i++) {
+            mul *=array3[i];
     }
-}
+        System.out.println("Multiplication of the numbers is : "+mul);
+}}

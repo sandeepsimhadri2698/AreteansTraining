@@ -2,20 +2,24 @@ package Calculator;
 
 public class division extends calculator {
 
-    private static float num1 ,num2;
-    division(float n1, float n2){
-        num1=n1;
-        num2=n2;
+    private static int[] array3;
+    division(int[] array){
+        //num1=n1;
+        //num2=n2;
+        array3=array;
     }
 
     @Override
-    public void divide() {
-        if(num2==0){
-            System.out.println("dividing by zero is not possible");
+    public void divide(){
+        try {
+            int div = 0;
+            for (int i = 0; i < array3.length; i++) {
+                div = array3[0] / array3[i];
+            }
+            System.out.println("Division of the two numbers is : " + div);
+        }catch(ArithmeticException ex){
+            System.out.println("Denominator cannot be zero");
         }
-        else{
-        float div =num1/num2;
-        System.out.println("Division of the two numbers is : "+div);
     }
 }
-}
+
