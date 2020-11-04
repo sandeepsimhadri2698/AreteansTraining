@@ -28,14 +28,26 @@ public class runner {
                 mul.multiply();
                 break;
             case "/":
-                    division div = new division(array);
-                    div.divide();
-                break;
+                 try {
+                     division div = new division(array);
+                     div.divide();
+                 }catch(ErrorHandling ex){
+                     ex.display();
+                 }
+                 break;
             default:
                 System.out.println("Operation not found");
         }
     }
-}
+        /*try {
+            division div = new division(array);
+            div.divide();
+        } catch (ErrorHandling ex) {
+            ex.display();
+        }*/
+    }
+
+
 
 
 

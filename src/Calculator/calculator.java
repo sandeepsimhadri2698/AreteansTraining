@@ -4,5 +4,5 @@ abstract class calculator {
     void add(){}
     void subtract(){}
     void multiply(){}
-    void divide(){}
+    void divide() throws ErrorHandling {}
 }
