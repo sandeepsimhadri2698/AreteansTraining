@@ -2,7 +2,7 @@ package Calculator;
 
 public class multiplication extends calculator {
 
-    public static double num1 ,num2;
+    private static double num1 ,num2;
     multiplication(int n1, int n2){
         num1=n1;
         num2=n2;

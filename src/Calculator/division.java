@@ -2,7 +2,7 @@ package Calculator;
 
 public class division extends calculator {
 
-    public static float num1 ,num2;
+    private static float num1 ,num2;
     division(float n1, float n2){
         num1=n1;
         num2=n2;
