@@ -2,7 +2,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
 
-public class runner {
+public class Runner {
     public static void main(String[] args) {
         Map<Integer, Book> map = new HashMap<Integer, Book>();
         Book b1 = new Book(101, "C Language", "Summit", "BPB", 8);
